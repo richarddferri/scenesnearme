@@ -1,4 +1,8 @@
 Blog::Application.routes.draw do
+  resources :microblogs
+
+  resources :users
+
   resources :microposts
 
   resources :posts
