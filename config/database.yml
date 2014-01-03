@@ -49,7 +49,11 @@ test:
   database: blog_test
   pool: 5
   username: blog
-  password:
+  password: blog
+  socket: /var/pgsql_socket/.s.PGSQL.5432
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
 
 production:
   adapter: postgresql

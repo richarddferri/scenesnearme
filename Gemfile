@@ -2,8 +2,26 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
-
-gem 'rspec-rails'
+group :development, :test do
+	gem 'rspec-rails'
+	gem 'guard-rspec'
+	gem 'guard-spork'
+	gem 'rspec-rails'
+	gem 'spork-rails', github: 'A-gen/spork-rails'
+	gem 'growl'
+	gem 'factory_girl_rails'	
+	gem 'rb-fsevent'
+	gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+	 gem 'turn'
+	 gem 'rb-fsevent'
+	 gem 'rb-notifu'
+	 gem 'childprocess'
+	gem 'rspec'
+end
+gem 'activerecord'
+group :test do
+	
+end
 # Use postgresql as the database for Active Record
 gem 'pg'
 
